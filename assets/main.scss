@@ -1,0 +1,205 @@
+---
+---
+
+@import "minima";
+
+body{
+    padding:0;
+    margin:0;
+    background-color:#203254;
+    color:white;
+}
+
+p, em {
+    color:white;  
+}
+
+.site-nav{
+    position:relative;
+    margin-left:50px;
+    vertical-align: center;
+    float:none;
+    display:inline-block;
+}
+
+.trigger{
+    &:hover{
+        a{
+            &.active{
+              color:white !important;
+            } 
+            &:hover  {
+               color:#cbb26a !important;
+           }
+          }
+    }
+}
+a, .page-link {
+    text-decoration: none;
+    color: white !important;
+    font-weight: 700;
+
+    &:hover {
+      color: #cbb26a !important;
+      text-decoration: none;
+    }
+}
+
+.page-link {
+    &.active{
+        color:#cbb26a !important;
+    } 
+}
+
+.wrapper {
+    max-width: 100%;
+    width:100%;
+    padding: 0 20px;
+}
+
+.site-header{
+    border-bottom:2px solid #cbb26a;
+}
+
+.site-footer{
+    border-top:2px solid #cbb26a;
+}
+
+.disclaimer-title {
+    color: #cbb26a;
+    font-weight: bold;
+}
+
+
+
+.lang-options{
+    &:hover { 
+        a{
+         &.active{
+           color:white !important;
+         } 
+         &:hover  {
+            color:#cbb26a !important;
+        }
+       }
+   }
+}
+
+.lang-options {
+    list-style-type: none;
+
+    li{
+        display: inline-block;
+    }
+
+    a{
+        &.active, &:hover  {
+            color:#cbb26a !important;
+        }
+    }
+}
+
+
+
+.logo {
+    height: 100%;
+    width: 250px;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.post-header{
+    display:none;
+}
+
+.posts{
+    column-count: 2;
+    column-gap: 10px;
+    list-style-type: none;
+    
+    li{
+        display:inline-block;
+        width: 550px;
+        height: auto;
+    }
+
+    p{
+        margin-top:10px;
+    }
+
+    img {
+        margin-bottom: 10px;
+        padding: 0 10%;
+        width:50%;
+    }
+}
+
+.full-bckgrnd-img {
+   
+  background-image: linear-gradient(to bottom, rgba(18,42, 66, .85), rgba(18,42, 66, .85)), url("/assets/images/cloudy-g85d909e66_1920.jpg");
+  background-position: 0 -50vh, center;
+  height:500px;
+  filter: contrast(120%);
+
+  .solgan{
+    position:absolute;
+    top: 25vh;
+    left: 5vh;
+    z-index:1000;
+    margin-left:5px;
+
+    h1,h3{
+        padding:0;
+        margin:0;
+        line-height: 1.5em;
+        color:#cbb26a;
+        font-weight:700;
+    }
+
+    h1{
+        font-size:48px;
+    }
+    h3{
+        font-size:32px;
+    }
+
+    
+  }
+ 
+  .call-to-action {
+    position:absolute;
+    top: 30vh;
+    left: 50%;
+    width:150px;
+    color:white;
+    background-color: rgba(0,0,0,0.1);
+    border: 2px solid #cbb26a;
+    border-radius: 40px;
+    z-index:1000;
+    padding: 20px;
+    font-weight:bold;
+    font-size:16px;
+    text-align: center;
+
+    &:hover{
+        color:black !important;
+        background-color:rgba(203, 178, 106,1);
+    }
+}
+@media screen and (max-width: 625px) {
+    .call-to-action {
+        top:45vh;
+        left:7vw;
+    }
+}
+}
+
+
+.post-title {
+    font-size: 32px;
+    color: #cbb26a;  
+}
+
+.lang-options a.active{
+    color:#cbb26a;
+}

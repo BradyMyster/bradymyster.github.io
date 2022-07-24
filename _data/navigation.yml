@@ -1,0 +1,18 @@
+languages:
+  - language: 
+      code: "en" 
+      name: "English"
+    links:
+      - title: "Home"
+        url: "home"
+      - title: "Blog" 
+        url: "blog"
+  - language: 
+      code: 'es'
+      name: 'Español'
+    links:
+      - title: "Hogar"
+        url: "home"
+      - title: "Blog" 
+        url: "blog"
+

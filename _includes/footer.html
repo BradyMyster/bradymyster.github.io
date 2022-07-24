@@ -1,0 +1,29 @@
+<footer class="site-footer h-card">
+     {% assign t = site.data.translations[page.lang] %}
+    <data class="u-url" href="{{ "/" | relative_url }}"></data>
+ 
+    <div class="wrapper">
+    
+      <div class="footer-col-wrapper">
+      
+        <div class="footer-col footer-col-3">
+          <span class="disclaimer-title">{{- t.disclaimerLabel}}: </span><p style="display:inline-block">{{- t.disclaimer | escape -}}</p>
+        </div>
+        <div class="footer-col footer-col-3">
+          <em>{{ t.readThisLangauge }}:</em>
+        <ul class="lang-options">
+          {% for i in site.data.navigation.languages %} 
+            <li>
+              <a href="{{ site.url }}{{ page.url | replace: page.lang, i.language.code | remove: '.html'}}" 
+                class="{{ i.language.code }}{%if page.lang == i.language.code%} active {% endif %}" 
+                title="View in {{i.language.name}}">
+                {{ i.language.name}}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        </div>
+      </div>
+     
+    </div>
+</footer>

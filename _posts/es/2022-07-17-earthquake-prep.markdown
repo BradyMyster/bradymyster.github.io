@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How To Prepare For An Earthquake"
+title:  "Cómo prepararse para un terremoto"
 date:   2022-07-17 14:26:54 -0600
 categories: es earthquake prepareness
 lang: es
@@ -11,7 +11,7 @@ external: true
 externalUrl: https://drive.google.com/file/d/1BSBp3P8wg5xtl3_5BLP4ek8lIcO9aP2A/view?usp=sharing
 ---
 
-Protect Yourself Before, During, and After an Earthquake
+Protéjase antes, durante y después de un terremoto
 
 [Read More...][earthquake-prep]
 
